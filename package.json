@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "json-server --watch db.json --port 5000",
-    "start": "set PORT=4200&& nodemon index",
-    "dev": "concurrently --kill-others \"npm run start\"  \"npm run server\""
+    "start": "set PORT=4200&& nodemon index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "json-server": "^0.14.0",
+    "lowdb": "^1.0.0",
     "nodemon": "^1.18.6",
     "pug": "^2.0.3"
   },

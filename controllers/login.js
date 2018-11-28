@@ -3,5 +3,9 @@ module.exports.login = (req, res)=>{
 };
 
 module.exports.SignIn = (req, res)=>{
-    res.status(200).json({message: 'enter'});
+    res.status(200).json({
+        email: req.body.email,
+        password: req.body.password
+
+    });
 };
