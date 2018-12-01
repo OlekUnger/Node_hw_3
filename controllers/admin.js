@@ -1,15 +1,25 @@
 const db = require('../models/db');
+const path = require('path');
 
-module.exports.admin = async (req, res)=>{
-    let skills = await db.get('skills').value() || [];
+module.exports.admin = (req, res)=>{
+    let skills = db.getState().skills || [];
     res.status(200).render('pages/admin', {skills});
 };
 
 module.exports.setSkills = async (req, res)=>{
     await db.set('skills', req.body).write();
-    res.redirect('/admin');
+    res.status(200).redirect('/admin');
 };
 
-module.exports.uploadFile = (req, res)=>{
-    res.status(200).json({message: 'upload file'})
+module.exports.createProduct = (req, res)=>{
+    let product = {
+        src: req.file ? `./assets/img/products/${req.file.originalname}` : '',
+        name: req.body.name,
+        price: req.body.price
+    };
+
+    db.get('products').push(product).write();
+    res.status(201).redirect('/admin');
+    // res.status(201).render('pages/admin', {msgfile: 'Загружено'});
+
 };

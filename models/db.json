@@ -44,12 +44,55 @@
       "src": "./assets/img/products/Work9.jpg",
       "name": "Вино вдохновение",
       "price": 600
+    },
+    {
+      "src": "./assets/img/products/0c23f8.jpg",
+      "name": "asd",
+      "price": "234"
+    },
+    {
+      "src": "./assets/img/products/0c23f8.jpg",
+      "name": "asd",
+      "price": "234"
+    },
+    {
+      "src": "./assets/img/products/6mIV1azoDzs.jpg",
+      "name": "asd",
+      "price": "234"
+    },
+    {
+      "src": "./assets/img/products/1.jpg",
+      "name": "asd",
+      "price": "234"
+    },
+    {
+      "src": "./assets/img/products/9D5REyqo0T0.jpg",
+      "name": "asd",
+      "price": "234"
     }
   ],
   "skills": {
-    "age": "20",
+    "age": "24",
     "concerts": "83",
     "cities": "37",
     "years": "20"
-  }
+  },
+  "letters": [
+    {
+      "name": "asd",
+      "email": "ounger@inbox.ru",
+      "message": "asdf"
+    },
+    {
+      "name": "asd",
+      "email": "ounger@inbox.ru",
+      "message": "sdfd"
+    }
+  ],
+  "users": [
+    {
+      "email": "ounger@inbox.ru",
+      "password": "123"
+    }
+  ]
 }
