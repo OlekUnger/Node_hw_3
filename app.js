@@ -11,7 +11,7 @@ const loginRoutes = require('./routes/login');
 const adminRoutes = require('./routes/admin');
 const homeRoutes = require('./routes/index');
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views','pages'));
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 

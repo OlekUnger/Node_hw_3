@@ -2,9 +2,8 @@ const db = require('../models/db');
 const path = require('path');
 
 module.exports.admin = (req, res) => {
-    // console.log(req.session.isAdmin)
     let skills = db.getState().skills || [];
-    res.status(200).render('pages/admin', {skills, msgfile: req.flash('msgfile'), msgskill: req.flash('msgskill')});
+    res.status(200).render('admin', {skills, msgfile: req.flash('msgfile'), msgskill: req.flash('msgskill')});
 };
 
 module.exports.setSkills = async (req, res) => {

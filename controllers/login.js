@@ -1,7 +1,7 @@
 const db = require('../models/db');
 
 module.exports.login = (req, res)=>{
-    res.status(200).render('pages/login',{msgslogin: req.flash('msgslogin')})
+    res.status(200).render('login',{msgslogin: req.flash('msgslogin')})
 };
 
 module.exports.SignIn = (req, res)=>{
