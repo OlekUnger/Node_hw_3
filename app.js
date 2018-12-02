@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const createError = require('http-errors');
 const session = require('express-session');
+const flash = require('connect-flash');
+const cookieParser = require('cookie-parser');
 const path = require('path');
 const app = express();
 
@@ -15,11 +17,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.use(cookieParser('secret123'));
 app.use(session({
-    secret: 'keyboard cat',
+    secret: 'secret123',
     resave: true,
     saveUninitialized: false
 }));
+app.use(flash());
+
 
 app.use('/login', loginRoutes);
 app.use('/admin', adminRoutes);

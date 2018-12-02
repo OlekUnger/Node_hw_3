@@ -32,12 +32,12 @@ block content
               button(type="submit").button Сохранить
           form.form-upload(action='/admin/upload' method="POST" enctype="multipart/form-data")
             .form-title Добавить товар
-            if (msgfile)
+            if (msgfile.length>0)
               .status #{msgfile}
             .form-upload__input-line
               .form-upload__wraper
                 label.form-upload__label
-                  input(name="photo" type="file" required accept="image/*").form-upload__input-file
+                  input(name="photo" id="upl" type="file" required accept="image/*").form-upload__input-file
                   span.form-upload__input-file-title Загрузить фото
             .form-upload__input-line
               input(name="name" type="text" placeholder="Название").form-upload__input

@@ -1,7 +1,7 @@
 const db = require('../models/db');
 
 module.exports.login = (req, res)=>{
-    res.status(200).render('pages/login',{})
+    res.status(200).render('pages/login',{msgslogin: req.flash('msgslogin')})
 };
 
 module.exports.SignIn = (req, res)=>{
@@ -14,9 +14,11 @@ module.exports.SignIn = (req, res)=>{
             req.session.isAdmin = true;
             res.status(200).redirect('/admin');
         } else {
-            res.status(401).render('pages/login', {msgslogin: 'Пароли не совпадают'})
+            req.flash('msgslogin', 'Пароли не совпадают');
+            res.status(401).redirect('/login');
         }
     } else {
-        res.status(404).render('pages/login', {msgslogin: 'Пользователь не найден'})
+        req.flash('msgslogin', 'Пользователь не найден');
+        res.status(404).redirect('/login');
     }
 };
