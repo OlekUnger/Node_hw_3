@@ -44,41 +44,6 @@
       "src": "./assets/img/products/Work9.jpg",
       "name": "Вино вдохновение",
       "price": 600
-    },
-    {
-      "src": "./assets/img/products/0c23f8.jpg",
-      "name": "asd",
-      "price": "234"
-    },
-    {
-      "src": "./assets/img/products/6mIV1azoDzs.jpg",
-      "name": "asd",
-      "price": "234"
-    },
-    {
-      "src": "./assets/img/products/1.jpg",
-      "name": "asd",
-      "price": "234"
-    },
-    {
-      "src": "./assets/img/products/9D5REyqo0T0.jpg",
-      "name": "asd",
-      "price": "234"
-    },
-    {
-      "src": "./assets/img/products/337153.jpg",
-      "name": "asd",
-      "price": "234"
-    },
-    {
-      "src": "./assets/img/products/9D5REyqo0T0.jpg",
-      "name": "asd",
-      "price": "234"
-    },
-    {
-      "src": "./assets/img/products/2mS5WW2r_8U.jpg",
-      "name": "asd",
-      "price": "234"
     }
   ],
   "skills": {
@@ -101,7 +66,7 @@
   ],
   "users": [
     {
-      "email": "ounger@inbox.ru",
+      "email": "asd@we.ry",
       "password": "123"
     }
   ]

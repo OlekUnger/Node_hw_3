@@ -21,6 +21,4 @@ module.exports.createProduct = (req, res)=>{
     db.get('products').push(product).write();
     req.flash('msgfile', 'Загружено');
     res.status(201).redirect('/admin');
-    // res.status(201).render('pages/admin', {msgfile: 'Загружено'});
-
 };
