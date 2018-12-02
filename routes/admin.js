@@ -6,6 +6,6 @@ const isAdmin = require('../middleware/auth');
 
 router.get('/', isAdmin, controller.admin);
 router.post('/skills', controller.setSkills);
-router.post('/upload', upload.single('photo'), controller.createProduct);
+router.post('/upload', upload, controller.createProduct);
 
 module.exports = router;

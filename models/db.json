@@ -47,27 +47,16 @@
     }
   ],
   "skills": {
-    "age": "24",
-    "concerts": "83",
-    "cities": "37",
+    "age": "28",
+    "concerts": "85",
+    "cities": "38",
     "years": "20"
   },
-  "letters": [
-    {
-      "name": "asd",
-      "email": "ounger@inbox.ru",
-      "message": "asdf"
-    },
-    {
-      "name": "asd",
-      "email": "ounger@inbox.ru",
-      "message": "sdfd"
-    }
-  ],
   "users": [
     {
       "email": "asd@we.ry",
       "password": "123"
     }
-  ]
+  ],
+  "letters": []
 }
